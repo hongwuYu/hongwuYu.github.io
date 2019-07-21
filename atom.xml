@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sunyshine.github.io/"/>
-  <updated>2019-04-27T15:37:52.000Z</updated>
+  <updated>2019-07-21T09:56:51.006Z</updated>
   <id>https://sunyshine.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://sunyshine.github.io/2019/04/27/mudo-first/"/>
     <id>https://sunyshine.github.io/2019/04/27/mudo-first/</id>
     <published>2019-04-27T15:16:48.000Z</published>
-    <updated>2019-04-27T15:37:52.000Z</updated>
+    <updated>2019-07-21T09:56:51.006Z</updated>
     
-    <content type="html"><![CDATA[<ul><li><strong>构造函数不应暴露this指针</strong>  </li></ul><blockquote><blockquote><p>&emsp;&emsp;对象在构造函数期间尚处于构造中，不是一个完整的对象，若此时暴露this指针，则别的线程可能会访问到这个半成品对象而造成难以预料的后果</p></blockquote></blockquote>]]></content>
+    <content type="html"><![CDATA[<ul><li><strong>构造函数不应暴露this指针</strong>  </li></ul><blockquote><blockquote><p>&emsp;&emsp;对象在构造函数期间尚处于构造中，不是一个完整的对象，若此时暴露this指针，则别的线程可能会访问到这个半成品对象而造成难以预料的后果</p></blockquote></blockquote><blockquote><blockquote><p>asdsdsda<br>asddasaddasadsads</p></blockquote></blockquote>]]></content>
     
     <summary type="html">
     
