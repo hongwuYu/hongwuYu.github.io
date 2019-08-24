@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hongwuYu.github.io/"/>
-  <updated>2019-08-24T07:22:12.139Z</updated>
+  <updated>2019-08-24T07:25:06.331Z</updated>
   <id>https://hongwuYu.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="https://hongwuYu.github.io/2019/08/24/ComputerComposition-first/"/>
     <id>https://hongwuYu.github.io/2019/08/24/ComputerComposition-first/</id>
     <published>2019-08-24T04:54:46.809Z</published>
-    <updated>2019-08-24T07:22:12.139Z</updated>
+    <updated>2019-08-24T07:25:06.331Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="冯诺依曼体系结构"><a href="#冯诺依曼体系结构" class="headerlink" title="冯诺依曼体系结构"></a>冯诺依曼体系结构</h1><blockquote><p>&emsp;可编程可存储型计算机：由存储器，运算器，控制器，输入设备，输出设备组成。</p></blockquote><h1 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h1><blockquote><p>计算机性能一般由两个指标来表示：响应时间 和 吞吐量 </p><ul><li>响应时间是计算机跑完一段程序所花的时间</li><li>吞吐量是指在一定时间内，计算机所能处理的任务量</li></ul></blockquote><p>直观来看，响应时间越短，计算机在一定时间内处理的任务量自然就会增多，也就是吞吐量上去了。所以提高响应时间就能提高吞吐量。此外，多增添几个cpu（即现在的多核计算机）也能提高吞吐量。</p><p><strong>计算机的计时单位：CPU时钟</strong></p><blockquote><p>&emsp;&emsp;如果是要衡量cpu性能，响应时间应该就指的是cpu实际执行时间。通常我们执行一个程序，可能会进行io操作，可能会因为线程切换中途暂时不执行该段程序等等其他不占用cpu时间的操作。因此，要想实际的去衡量计算机性能，就必须仅计算程序占用cpu的时间。但是对于有些程序，它可能会限制cpu降频运行。即不同的程序使用cpu的方式不同，可能满载可能降频。因此，我们需要对cpu时间进一步分解：</p><p>&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;cpu执行时间 = 时钟周期数 * 时钟周期时间</p></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="冯诺依曼体系结构"><a href="#冯诺依曼体系结构" class="headerlink" title="冯诺依曼体系结构"></a>冯诺依曼体系结构</h1><blockquote><p>&emsp;可编程可存储型计算机：由存储器，运算器，控制器，输入设备，输出设备组成。</p></blockquote><h1 id="性能"><a href="#性能" class="headerlink" title="性能"></a>性能</h1><blockquote><p>计算机性能一般由两个指标来表示：响应时间 和 吞吐量 </p><ul><li>响应时间是计算机跑完一段程序所花的时间</li><li>吞吐量是指在一定时间内，计算机所能处理的任务量</li></ul></blockquote><p>直观来看，响应时间越短，计算机在一定时间内处理的任务量自然就会增多，也就是吞吐量上去了。所以提高响应时间就能提高吞吐量。此外，多增添几个cpu（即现在的多核计算机）也能提高吞吐量。</p><p><strong>计算机的计时单位：CPU时钟</strong></p><blockquote><p>&emsp;&emsp;如果是要衡量cpu性能，响应时间应该就指的是cpu实际执行时间。通常我们执行一个程序，可能会进行io操作，可能会因为线程切换中途暂时不执行该段程序等等其他不占用cpu时间的操作。因此，要想实际的去衡量计算机性能，就必须仅计算程序占用cpu的时间。但是对于有些程序，它可能会限制cpu降频运行。即不同的程序使用cpu的方式不同，可能满载可能降频。因此，我们需要对cpu时间进一步分解：</p><p>&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;cpu执行时间 = 时钟周期数 * 时钟周期时间</p></blockquote>]]></content>
     
     <summary type="html">
     
