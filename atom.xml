@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://sunyshine.github.io/"/>
-  <updated>2019-07-21T09:56:51.006Z</updated>
-  <id>https://sunyshine.github.io/</id>
+  <link href="https://hongwuYu.github.io/"/>
+  <updated>2019-04-20T06:42:25.000Z</updated>
+  <id>https://hongwuYu.github.io/</id>
   
   <author>
     <name>hongwu.yu</name>
@@ -17,39 +17,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>《linux多线程服务端编程》读书笔记-第一章</title>
-    <link href="https://sunyshine.github.io/2019/04/27/mudo-first/"/>
-    <id>https://sunyshine.github.io/2019/04/27/mudo-first/</id>
-    <published>2019-04-27T15:16:48.000Z</published>
-    <updated>2019-07-21T09:56:51.006Z</updated>
-    
-    <content type="html"><![CDATA[<ul><li><strong>构造函数不应暴露this指针</strong>  </li></ul><blockquote><blockquote><p>&emsp;&emsp;对象在构造函数期间尚处于构造中，不是一个完整的对象，若此时暴露this指针，则别的线程可能会访问到这个半成品对象而造成难以预料的后果</p></blockquote></blockquote><blockquote><blockquote><p>asdsdsda<br>asddasaddasadsads</p></blockquote></blockquote>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;构造函数不应暴露this指针&lt;/strong&gt;  &lt;/li&gt;
-&lt;/ul&gt;
-&lt;blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;emsp;&amp;emsp;对象在构造函数期间尚处于构造中，不是一个完整的对象，若此时暴露this指针，则别的线程可能
-      
-    
-    </summary>
-    
-      <category term="《linux多线程服务端编程》读书笔记" scheme="https://sunyshine.github.io/categories/%E3%80%8Alinux%E5%A4%9A%E7%BA%BF%E7%A8%8B%E6%9C%8D%E5%8A%A1%E7%AB%AF%E7%BC%96%E7%A8%8B%E3%80%8B%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="读书笔记" scheme="https://sunyshine.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
     <title>go 类型转换</title>
-    <link href="https://sunyshine.github.io/2019/04/20/go-forth/"/>
-    <id>https://sunyshine.github.io/2019/04/20/go-forth/</id>
+    <link href="https://hongwuYu.github.io/2019/04/20/go-forth/"/>
+    <id>https://hongwuYu.github.io/2019/04/20/go-forth/</id>
     <published>2019-04-20T05:54:47.000Z</published>
     <updated>2019-04-20T06:42:25.000Z</updated>
     
@@ -71,17 +41,17 @@
     
     </summary>
     
-      <category term="go语言学习笔记" scheme="https://sunyshine.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="go语言学习笔记" scheme="https://hongwuYu.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="go" scheme="https://sunyshine.github.io/tags/go/"/>
+      <category term="go" scheme="https://hongwuYu.github.io/tags/go/"/>
     
   </entry>
   
   <entry>
     <title>go异常处理机制</title>
-    <link href="https://sunyshine.github.io/2019/04/19/go-third/"/>
-    <id>https://sunyshine.github.io/2019/04/19/go-third/</id>
+    <link href="https://hongwuYu.github.io/2019/04/19/go-third/"/>
+    <id>https://hongwuYu.github.io/2019/04/19/go-third/</id>
     <published>2019-04-19T12:23:21.000Z</published>
     <updated>2019-04-19T15:29:53.000Z</updated>
     
@@ -99,17 +69,17 @@
     
     </summary>
     
-      <category term="go语言学习笔记" scheme="https://sunyshine.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="go语言学习笔记" scheme="https://hongwuYu.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="go" scheme="https://sunyshine.github.io/tags/go/"/>
+      <category term="go" scheme="https://hongwuYu.github.io/tags/go/"/>
     
   </entry>
   
   <entry>
     <title>go 数组和切片</title>
-    <link href="https://sunyshine.github.io/2019/04/17/go-second/"/>
-    <id>https://sunyshine.github.io/2019/04/17/go-second/</id>
+    <link href="https://hongwuYu.github.io/2019/04/17/go-second/"/>
+    <id>https://hongwuYu.github.io/2019/04/17/go-second/</id>
     <published>2019-04-17T06:48:48.000Z</published>
     <updated>2019-04-17T10:01:23.000Z</updated>
     
@@ -128,17 +98,17 @@
     
     </summary>
     
-      <category term="go语言学习笔记" scheme="https://sunyshine.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="go语言学习笔记" scheme="https://hongwuYu.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="go" scheme="https://sunyshine.github.io/tags/go/"/>
+      <category term="go" scheme="https://hongwuYu.github.io/tags/go/"/>
     
   </entry>
   
   <entry>
     <title>go基础杂项</title>
-    <link href="https://sunyshine.github.io/2019/04/16/go-first/"/>
-    <id>https://sunyshine.github.io/2019/04/16/go-first/</id>
+    <link href="https://hongwuYu.github.io/2019/04/16/go-first/"/>
+    <id>https://hongwuYu.github.io/2019/04/16/go-first/</id>
     <published>2019-04-16T09:46:03.000Z</published>
     <updated>2019-04-17T06:47:44.000Z</updated>
     
@@ -158,10 +128,10 @@
     
     </summary>
     
-      <category term="go语言学习笔记" scheme="https://sunyshine.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+      <category term="go语言学习笔记" scheme="https://hongwuYu.github.io/categories/go%E8%AF%AD%E8%A8%80%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
-      <category term="go" scheme="https://sunyshine.github.io/tags/go/"/>
+      <category term="go" scheme="https://hongwuYu.github.io/tags/go/"/>
     
   </entry>
   
