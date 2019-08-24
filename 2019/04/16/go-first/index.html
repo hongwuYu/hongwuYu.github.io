@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="yhw&#39;s personal blog">
 <meta property="og:description" content="go语言的string   与其他语言不一样，go语言的string是语言内置类型,其内部存储结构为  1234type stringStruct struct&amp;#123;  str  unsafe.Pointer  //指向底层字节数组的指针  len  int             //字节数组长度&amp;#125;            并且 go语言的string结尾处没有NULL字符   g">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-04-17T06:47:44.000Z">
+<meta property="og:updated_time" content="2019-08-24T04:56:20.977Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="go基础杂项">
 <meta name="twitter:description" content="go语言的string   与其他语言不一样，go语言的string是语言内置类型,其内部存储结构为  1234type stringStruct struct&amp;#123;  str  unsafe.Pointer  //指向底层字节数组的指针  len  int             //字节数组长度&amp;#125;            并且 go语言的string结尾处没有NULL字符   g">
@@ -364,7 +364,7 @@
 <blockquote>
 <p>与其他语言不一样，go语言的string是语言内置类型,其内部存储结构为</p>
 <blockquote>
-<figure class="highlight rust"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">type</span> <span class="title">stringStruct</span></span> <span class="class"><span class="keyword">struct</span>&#123;</span></span><br><span class="line">  <span class="built_in">str</span>  <span class="keyword">unsafe</span>.Pointer  <span class="comment">//指向底层字节数组的指针</span></span><br><span class="line">  len  int             <span class="comment">//字节数组长度</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">type</span> stringStruct <span class="keyword">struct</span>&#123;</span><br><span class="line">  str  unsafe.Pointer  <span class="comment">//指向底层字节数组的指针</span></span><br><span class="line">  <span class="built_in">len</span>  <span class="keyword">int</span>             <span class="comment">//字节数组长度</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </blockquote>
 </blockquote>
@@ -384,60 +384,20 @@
 <blockquote>
 <p>&emsp;&emsp;go语言使用标签（Label）来标识一个语句的位置，用于goto，break,continue语句的跳转，标签的语法是：</p>
 <blockquote>
-<figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Label</span><span class="bash">:Statement</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span>&gt;<span class="symbol">Label:</span>Statement</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;</span><br></pre></td></tr></table></figure>
 </blockquote>
 </blockquote>
 </blockquote>
-<blockquote>
-<blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><em>goto Label</em></p>
-<blockquote>
-<ul>
-<li>goto语句只能在函数内跳转</li>
-</ul>
-</blockquote>
-</blockquote>
-</blockquote>
+<figure class="highlight ruby"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&gt;&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>*goto Label*</span><br><span class="line"><span class="meta">&gt;&gt;</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;* goto语句只能在函数内跳转</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;* goto语句不能跳过内部声明变量的语句</span><br><span class="line"></span><br><span class="line"><span class="meta">&gt;&gt;</span>*break Label*</span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;* 主要用于跳出多重循环，代码示例如下：</span><br><span class="line"><span class="meta">&gt;&gt;</span></span><br><span class="line"><span class="meta">&gt;&gt;</span>&gt;</span><br></pre></td></tr></table></figure>
+<p>  L1:<br>    for i := 0; i++{<br>      for j := 0; j++{<br>        if i &gt;= 5{<br>           //跳出L1标签所在的for循环<br>          break L1<br>        }<br>        if i &gt;= 10{<br>          //默认仅跳出离break最近的for循环<br>          break<br>        }<br>      }<br>    }<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;*<span class="keyword">continue</span> Label 可类推 <span class="keyword">break</span> *</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">**<span class="keyword">byte</span> 与 <span class="keyword">rune</span>**</span><br><span class="line">&gt;&gt;对于字节类型，<span class="keyword">go</span>语言提供了两种形式：<span class="keyword">byte</span>与<span class="keyword">rune</span>.  </span><br><span class="line">&gt;&gt;*&amp;emsp;&amp;emsp;<span class="keyword">byte</span> 实质是unit8,以utf<span class="number">-8</span>编码*  </span><br><span class="line">&gt;&gt;*&amp;emsp;&amp;emsp;<span class="keyword">rune</span> 实质是unit32,以unicode编码*  </span><br><span class="line">&gt;&gt;代码示例</span><br><span class="line">&gt;&gt;&gt;</span><br></pre></td></tr></table></figure></p>
 <blockquote>
 <blockquote>
 <blockquote>
-<ul>
-<li>goto语句不能跳过内部声明变量的语句</li>
-</ul>
+<p>package main<br><figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  s := <span class="string">"go语言"</span></span><br><span class="line"></span><br><span class="line">  bytes := []<span class="keyword">byte</span>(s)</span><br><span class="line">  <span class="keyword">for</span> _,ch := <span class="keyword">range</span> bytes&#123;</span><br><span class="line">    <span class="comment">// 输出为：goè¯­è¨ 中文乱码，因为一个byte占一个字节，而一个中文字符占两个字节！</span></span><br><span class="line">    fmt.Printf(<span class="string">"%c"</span>,ch)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  fmt.Println();</span><br><span class="line">	</span><br><span class="line">  runes := []<span class="keyword">rune</span>(s)</span><br><span class="line">  <span class="keyword">for</span> _,ch := <span class="keyword">range</span> runes&#123;</span><br><span class="line">    <span class="comment">//输出为：go语言 一个rune占4个字节，可以正确输出任何字符</span></span><br><span class="line">    fmt.Printf(<span class="string">"%c"</span>,ch)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 </blockquote>
 </blockquote>
 </blockquote>
-<blockquote>
-<blockquote>
-<p><em>break Label</em></p>
-<blockquote>
-<ul>
-<li>主要用于跳出多重循环，代码示例如下：</li>
-</ul>
-</blockquote>
-<blockquote>
-   <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">L1:</span><br><span class="line">  <span class="keyword">for</span> i := <span class="number">0</span>; i++&#123;</span><br><span class="line">    <span class="keyword">for</span> j := <span class="number">0</span>; j++&#123;</span><br><span class="line">      <span class="keyword">if</span> i &gt;= <span class="number">5</span>&#123;</span><br><span class="line">      <span class="regexp">//</span>跳出L1标签所在的<span class="keyword">for</span>循环</span><br><span class="line">        <span class="keyword">break</span> L1</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="keyword">if</span> i &gt;= <span class="number">10</span>&#123;</span><br><span class="line">        <span class="regexp">//</span>默认仅跳出离<span class="keyword">break</span>最近的<span class="keyword">for</span>循环</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</blockquote>
-<blockquote>
-<blockquote>
-<p><em>continue Label 可类推 break </em></p>
-</blockquote>
-</blockquote>
-<p><strong>byte 与 rune</strong></p>
-<blockquote>
-<blockquote>
-<p>对于字节类型，go语言提供了两种形式：byte与rune.<br><em>&emsp;&emsp;byte 实质是unit8,以utf-8编码</em><br><em>&emsp;&emsp;rune 实质是unit32,以unicode编码</em><br>代码示例</p>
-<blockquote>
-<figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">package</span> main</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> <span class="string">"fmt"</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">main</span><span class="params">()</span></span> &#123;</span><br><span class="line">  s := <span class="string">"go语言"</span></span><br><span class="line">  </span><br><span class="line">  bytes := []<span class="keyword">byte</span>(s)</span><br><span class="line">  <span class="keyword">for</span> _,ch := <span class="keyword">range</span> bytes&#123;</span><br><span class="line">    <span class="comment">// 输出为：goè¯­è¨ 中文乱码，因为一个byte占一个字节，而一个中文字符占两个字节！</span></span><br><span class="line">    fmt.Printf(<span class="string">"%c"</span>,ch)</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  fmt.Println();</span><br><span class="line">	</span><br><span class="line">  runes := []<span class="keyword">rune</span>(s)</span><br><span class="line">  <span class="keyword">for</span> _,ch := <span class="keyword">range</span> runes&#123;</span><br><span class="line">    <span class="comment">//输出为：go语言 一个rune占4个字节，可以正确输出任何字符</span></span><br><span class="line">    fmt.Printf(<span class="string">"%c"</span>,ch)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</blockquote>
-</blockquote>
-</blockquote>
+<p><code>`</code></p>
 
       
     </div>
@@ -544,7 +504,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
